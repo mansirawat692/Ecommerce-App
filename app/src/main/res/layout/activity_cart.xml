@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.Cart">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2BE9F3"
+        android:id="@+id/rl1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#2BE9F3"
+            android:gravity="center"
+            android:text="Total Amount = "
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/total"></TextView>
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/conformmsg"
+        android:layout_centerVertical="true"
+        android:text="Congratulation s, your order has been placed successfully.Soon you will receive your order"
+        android:textSize="20dp"
+        android:layout_marginStart="10dp"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:layout_marginEnd="10dp"
+        tools:ignore="RtlCompat"></TextView>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl1"
+        android:layout_marginTop="10dp"
+        android:layout_above="@+id/next"
+        android:id="@+id/rv1"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#2BE9F3"
+        android:layout_margin="10dp"
+        android:text="NEXT"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:elevation="6dp"
+        android:id="@+id/next"></Button>
+
+
+</RelativeLayout>

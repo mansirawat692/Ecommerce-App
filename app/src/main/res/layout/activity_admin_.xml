@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.RegisterActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="@drawable/onlineshop"
+        android:layout_marginTop="250dp"
+        android:id="@+id/icon"
+        android:layout_centerHorizontal="true"></ImageView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button2"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/inputname"
+        android:id="@+id/inputnumber"
+        android:inputType="number"
+        android:hint="Phone Number"
+        android:textSize="20dp"
+        android:textColorHint="#2BE9F3"
+        android:textColor="#2BE9F3"></EditText>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button2"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/icon"
+        android:id="@+id/inputname"
+        android:hint="Username"
+        android:textSize="20dp"
+        android:textColorHint="#2BE9F3"
+        android:textColor="#2BE9F3"></EditText>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button2"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/inputnumber"
+        android:id="@+id/inputpass"
+        android:inputType="numberPassword"
+        android:hint="Password"
+        android:textSize="20dp"
+        android:textColorHint="#2BE9F3"
+        android:textColor="#2BE9F3"></EditText>
+
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:id="@+id/reg"
+        android:text="Registetr"
+        android:textColor="#FBFBFB"
+        android:textSize="20dp"
+        android:layout_below="@id/inputpass"
+        android:padding="20dp"
+        ></Button>
+
+
+</RelativeLayout>

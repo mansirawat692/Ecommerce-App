@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    app:cardElevation="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2BE9F3">
+<!--
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="10dp"
+    android:id="@+id/imagep"></ImageView>
+-->
+
+        <TextView
+            android:id="@+id/itemname"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:gravity="start"
+            android:padding="2dp"
+            android:text="Product Name"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="9dp"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:textStyle="bold"></TextView>
+
+
+
+        <TextView
+            android:id="@+id/itemdes"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:gravity="start"
+            android:padding="2dp"
+            android:layout_below="@+id/itemname"
+            android:text="Product Description"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="9dp"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:textStyle="bold"></TextView>
+
+
+        <TextView
+            android:id="@+id/itemquantity"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="5dp"
+            android:gravity="start"
+            android:padding="2dp"
+           android:layout_below="@+id/itemdes"
+            android:layout_marginLeft="30dp"
+            android:text="Quantity of Product"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/itemprice"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemquantity"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="4dp"
+
+            android:gravity="start"
+            android:layout_marginLeft="30dp"
+            android:padding="2dp"
+            android:text="Product Price"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:textStyle="bold"></TextView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

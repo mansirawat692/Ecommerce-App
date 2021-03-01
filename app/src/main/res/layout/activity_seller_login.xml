@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".seller.SellerLogin">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/sellerlogin"
+                android:id="@+id/sellerloginbackground"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Seller Login"
+                android:layout_below="@+id/sellerloginbackground"
+                android:layout_marginTop="20dp"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:padding="6dp"
+                android:textColor="#3CECE6"
+                android:id="@+id/sellerlog"></TextView>
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Id"
+                android:layout_below="@+id/sellerlog"
+                android:layout_marginTop="20dp"
+                android:textSize="18dp"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="3dp"
+                android:textColorHint="#3CECE6"
+                android:padding="6dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:id="@+id/sellermaillog"></EditText>
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:layout_below="@+id/sellermaillog"
+                android:layout_marginTop="20dp"
+                android:textSize="18dp"
+                android:paddingLeft="3dp"
+                android:inputType="textPassword"
+                android:textColorHint="#3CECE6"
+                android:padding="6dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:id="@+id/sellerpasslog"></EditText>
+
+
+
+
+
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sellerpasslog"
+                android:text="Login"
+                android:background="#3CECE6"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:paddingLeft="3dp"
+                android:id="@+id/sellerbutton"
+                android:layout_marginTop="50dp"></Button>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

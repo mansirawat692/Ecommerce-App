@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    app:cardElevation="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2BE9F3">
+
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="start"
+            android:padding="2dp"
+            android:text="Username"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="9dp"
+            android:textColor="#FFFFFF"
+
+            android:textSize="15dp"
+            android:textStyle="bold"></TextView>
+
+
+
+        <TextView
+            android:id="@+id/orderno"
+            android:layout_width="160dp"
+            android:layout_toRightOf="@+id/username"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="2dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/itemname"
+            android:text="Phone Number"
+            android:layout_marginTop="9dp"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:textStyle="bold"></TextView>
+
+
+        <TextView
+            android:id="@+id/orderaddcity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:layout_below="@+id/username"
+            android:layout_marginLeft="20dp"
+            android:text="Adderss / City"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/orderdate"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderaddcity"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="start"
+            android:layout_marginLeft="20dp"
+            android:padding="2dp"
+            android:text="Date"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:textStyle="bold"></TextView>
+
+
+
+        <TextView
+            android:id="@+id/ordertime"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderaddcity"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toRightOf="@+id/orderdate"
+            android:gravity="start"
+            android:padding="2dp"
+            android:text="Time"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:textStyle="bold"></TextView>
+
+
+        <TextView
+            android:id="@+id/orderamount"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderdate"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="4dp"
+           android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Total Amount"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:textStyle="bold"></TextView>
+
+
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/orderamount"
+            android:background="#ffffff"
+            android:elevation="6dp"
+            android:text="Show all the orders"
+            android:textColor="#2BE9F3"
+            android:textSize="20dp"
+            android:textStyle="bold"></Button>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
